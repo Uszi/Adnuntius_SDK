@@ -1,0 +1,3 @@
+[submodule "Android/AdnuntiusAndroidSDK/Android/AdnuntiusAndroidSDK/volley"]
+	path = Android/AdnuntiusAndroidSDK/Android/AdnuntiusAndroidSDK/volley
+	url = https://github.com/google/volley

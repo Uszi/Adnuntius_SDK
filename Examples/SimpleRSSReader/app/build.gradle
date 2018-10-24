@@ -29,4 +29,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:25.0.1'
     implementation 'com.android.support:design:25.0.1'
     implementation project(":lib-release")
+    compile 'com.android.volley:volley:1.1.1'
 }

@@ -47,7 +47,11 @@ public class AdnuntiusAdWebView: UIWebView {
         return self
     }
     @objc func adTap(_ sender:UITapGestureRecognizer){
-        UIApplication.shared.open(URL(string: self.clickUrl)!)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: self.clickUrl)!)
+        } else {
+            UIApplication.shared.openURL(URL(string: self.clickUrl)!)
+        }
     }
     open func addBehavior() {
         print("DEBUG: addBehaviour")

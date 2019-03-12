@@ -40,8 +40,11 @@ import UIKit
     }
     @objc func adTap(_ sender:UITapGestureRecognizer){
         if let url = URL(string: self.tapAction) {
-            UIApplication.shared.open(url, options: [:])
-
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
     }
     open func addBehavior() {

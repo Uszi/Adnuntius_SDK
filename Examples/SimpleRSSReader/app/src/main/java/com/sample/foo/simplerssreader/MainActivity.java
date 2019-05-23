@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
         AdView.adScript = "<html>\n" +
                 "        <head />\n" +
                 "        <body>\n" +
-                "        <div id=\"adn-0000000000000fe6\" style=\"display:none\"></div>\n" +
-                "        <script type=\"text/javascript\">(function(d, s, e, t) { e = d.createElement(s); e.type = 'text/java' + s; e.async = 'async'; e.src = 'http' + ('https:' === location.protocol ? 's' : '') + '://cdn.adnuntius.com/adn.js'; t = d.getElementsByTagName(s)[0]; t.parentNode.insertBefore(e, t); })(document, 'script');window.adn = window.adn || {}; adn.calls = adn.calls || []; adn.calls.push(function() { adn.request({ adUnits: [ {auId: '0000000000000fe6', auW: 320, auH: 480 } ]}); });</script>\n" +
+                "        <div id=\"adn-0000000000042bf0\" style=\"display:none\"></div>\n" +
+                "        <script type=\"text/javascript\">(function(d, s, e, t) { e = d.createElement(s); e.type = 'text/java' + s; e.async = 'async'; e.src = 'http' + ('https:' === location.protocol ? 's' : '') + '://cdn.adnuntius.com/adn.js'; t = d.getElementsByTagName(s)[0]; t.parentNode.insertBefore(e, t); })(document, 'script');window.adn = window.adn || {}; adn.calls = adn.calls || []; adn.calls.push(function() { adn.request({ adUnits: [ {auId: '0000000000000fe6', auW: 500, auH: 900 } ]}); });</script>\n" +
                 "        </body>\n" +
                 "        </html>";
-        AdView.jsonConfig = "{siteId: '1131763067966473843', adUnits: [{auId: '000000000002e35f', c: ['sport']}]}";
+        AdView.jsonConfig = "{siteId: '1131763067966473843', adUnits: [{auId: '0000000000042bf0', c: ['sport']}]}";
         setContentView(R.layout.activity_main);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
